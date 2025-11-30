@@ -38,18 +38,18 @@ A clean and functional Todo Mobile Application built using React Native + Expo R
 
 📂 Folder Structure
 app/
-├── (auth)/
-│ ├── login.tsx
-│ └── signup.tsx
-├── (main)/
-│ ├── index.tsx
-│ ├── create-todo.tsx
-│ └── profile.tsx
-├── \_layout.tsx
+(auth)/
+ login.tsx
+ signup.tsx
+(main)/
+ index.tsx
+ create-todo.tsx
+ profile.tsx
+ layout.tsx
 context/
-└── TodosContext.tsx
+ TodosContext.tsx
 utils/
-└── auth.ts (token helpers)
+ auth.ts (token helpers)
 
 🔧 Setup & Installation
 
@@ -70,7 +70,6 @@ ifconfig (macOS / Linux)
 
 📸 Screenshots
 
-(Add after you take screenshots)
 ![Login](/assets/screenshots/login.png)
 ![Creating todo](</assets/screenshots/creating todo.png>)
 ![logged in](/assets/screenshots/loggedin.png)
@@ -79,7 +78,7 @@ ifconfig (macOS / Linux)
 ![signup](/assets/screenshots/signup.png)
 ![todo list](</assets/screenshots/todo list.png>)
 ![profile](</assets/screenshots/user profile.png>)
-⸻
+
 
 📄 License
 
