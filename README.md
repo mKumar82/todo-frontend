@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+📱 Todo App — React Native (Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A clean and functional Todo Mobile Application built using React Native + Expo Router, demonstrating:
 
-## Get started
+✅ Authentication
+✅ Navigation (Expo Router + Tabs + Stack)
+✅ API Integration with FastAPI
+✅ State Management (Context Provider)
+✅ Beautiful UI & UX
+✅ Secure Token Storage
 
-1. Install dependencies
+🚀 Features
 
-   ```bash
-   npm install
-   ```
+🔐 Authentication
+• User Signup
+• User Login
+• JWT Token saved securely using Expo SecureStore
 
-2. Start the app
+📋 Dashboard
+• Fetch Todos from backend
+• Create Todo
+• Toggle Completion
+• Edit Todo
+• Delete Todo
+• Auto-refresh after create/update/delete
 
-   ```bash
-   npx expo start
-   ```
+👤 Profile
+• Fetch and display authenticated user details
+• Logout / Signout
 
-In the output, you'll find options to open the app in a
+🎨 UI Highlights
+• Modern card-based layout
+• Clean buttons
+• Floating “+ Add Task” button
+• Responsive for Android + iOS
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+⸻
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+📂 Folder Structure
+app/
+├── (auth)/
+│ ├── login.tsx
+│ └── signup.tsx
+├── (main)/
+│ ├── index.tsx
+│ ├── create-todo.tsx
+│ └── profile.tsx
+├── \_layout.tsx
+context/
+└── TodosContext.tsx
+utils/
+└── auth.ts (token helpers)
 
-## Get a fresh project
+🔧 Setup & Installation
 
-When you're ready, run:
+1️⃣ Install dependencies
+npm install
 
-```bash
-npm run reset-project
-```
+2️⃣ Start Expo
+npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3️⃣ Configure API URL
 
-## Learn more
+Inside constants.ts:
+export const API_URL = "http://YOUR_LOCAL_IP:8000";
 
-To learn more about developing your project with Expo, look at the following resources:
+Find your local IP:
+ipconfig (Windows)
+ifconfig (macOS / Linux)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+📸 Screenshots
 
-## Join the community
+(Add after you take screenshots)
+![Login](/assets/screenshots/login.png)
+![Creating todo](</assets/screenshots/creating todo.png>)
+![logged in](/assets/screenshots/loggedin.png)
+![mark complete](</assets/screenshots/mark todo completion.png>)
+![signing](/assets/screenshots/signing.png)
+![signup](/assets/screenshots/signup.png)
+![todo list](</assets/screenshots/todo list.png>)
+![profile](</assets/screenshots/user profile.png>)
+⸻
 
-Join our community of developers creating universal apps.
+📄 License
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+MIT License
